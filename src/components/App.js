@@ -7,6 +7,7 @@ import Header from "./Header";
 import CharacterList from "./CharacterList";
 import Filters from "./Filters";
 import CharacterDetail from "./CharacterDetail";
+import Load from "./Load";
 
 const App = () => {
   // State
@@ -14,11 +15,14 @@ const App = () => {
   const [userInput, setUserInput] = useState(
     localStorage.getItem("name") || ""
   );
+  const [load, setLoad] = useState(true);
 
   // Life cicle
   useEffect(() => {
+    setLoad(true);
     getDataFromApi().then((data) => {
       setCharacters(data);
+      setLoad(false);
     });
   }, []);
 
@@ -64,6 +68,7 @@ const App = () => {
     <>
       <Header />
       <main className="main">
+        {load === true ? <Load /> : null}
         <Switch>
           <Route exact path="/">
             <Filters
