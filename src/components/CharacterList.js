@@ -26,14 +26,18 @@ const CharacterList = (props) => {
     }
     return 0;
   });
+  console.log(listCharacters);
 
   // Return
-
-  if (listCharacters !== []) {
-    return <ul className="character__list">{listCharacters}</ul>;
-  } else {
-    return <p className="character-error">Ne encontrado</p>;
-  }
+  return (
+    <section className="character">
+      {listCharacters.length !== 0 ? (
+        <ul className="character__list">{listCharacters}</ul>
+      ) : (
+        <p className="character-error">Ne encontrado</p>
+      )}
+    </section>
+  );
 };
 
 export default CharacterList;

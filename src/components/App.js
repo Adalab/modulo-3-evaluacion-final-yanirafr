@@ -78,6 +78,7 @@ const App = () => {
             />
             <CharacterList characters={browsedCharacters} />
           </Route>
+
           <Route
             path="/character-dertail/:id"
             component={renderCharacterDetail}
