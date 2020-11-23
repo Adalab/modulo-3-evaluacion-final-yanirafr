@@ -34,28 +34,22 @@ const App = () => {
 
   // Card click
   const renderCharacterDetail = (props) => {
-    const characterId = props.match.params.id;
+    const characterId = parseInt(props.match.params.id);
 
     const clickedCharacter = characters.find((character) => {
-      console.log("id", character.id);
-      console.log("find", characterId);
-      if (characterId === character.id) {
-        console.log("if", characterId, character.id);
-        return true;
-      } else {
-        return false;
-      }
+      return characterId === parseInt(character.id);
     });
 
-    if (clickedCharacter === true) {
+    if (clickedCharacter) {
       return (
         <CharacterDetail
           id={clickedCharacter.id}
+          image={clickedCharacter.image}
           name={clickedCharacter.name}
           status={clickedCharacter.status}
           species={clickedCharacter.species}
-          // origin={clickedCharacter.origin.name}
-          // episodes={clickedCharacter.espisode.length}
+          origin={clickedCharacter.origin.name}
+          episodes={clickedCharacter.episode.length}
         />
       );
     } else {
