@@ -26,7 +26,6 @@ const CharacterList = (props) => {
     }
     return 0;
   });
-  console.log(listCharacters);
 
   // Return
   return (
@@ -34,7 +33,7 @@ const CharacterList = (props) => {
       {listCharacters.length !== 0 ? (
         <ul className="character__list">{listCharacters}</ul>
       ) : (
-        <p className="character-error">Ne encontrado</p>
+        <p className="character__error">No encontrado</p>
       )}
     </section>
   );

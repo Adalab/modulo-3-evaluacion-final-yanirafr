@@ -67,8 +67,8 @@ const App = () => {
   return (
     <>
       <Header />
+      {load === true ? <Load /> : null}
       <main className="main">
-        {load === true ? <Load /> : null}
         <Switch>
           <Route exact path="/">
             <Filters

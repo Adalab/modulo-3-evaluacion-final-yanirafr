@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 const CharacterDetail = (props) => {
   return (
     <>
-      <Link to="/">Home</Link>
+      <Link to="/" className="home-link">
+        Home
+      </Link>
       <article className="character-detail" id={props.id}>
         <img
           src={props.image}
