@@ -1,12 +1,12 @@
 import React from "react";
 import "../stylesheet/App.scss";
 import { useState, useEffect } from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { getDataFromApi } from "../services/api";
 import Header from "./Header";
 import CharacterList from "./CharacterList";
-import CharacterDetail from "./CharacterDetail";
 import Filters from "./Filters";
+import CharacterDetail from "./CharacterDetail";
 
 const App = () => {
   // State
@@ -22,6 +22,7 @@ const App = () => {
     });
   }, []);
 
+  // Filter
   const handleFilter = (userInput) => {
     setUserInput(userInput);
     localStorage.setItem("name", userInput);
@@ -31,17 +32,46 @@ const App = () => {
     return character.name.toUpperCase().includes(userInput.toUpperCase());
   });
 
-  console.log(browsedCharacters);
+  // Card click
+  const renderCharacterDetail = (props) => {
+    const characterId = props.match.params.id;
+
+    const clickedCharacter = characters.find((character) => {
+      console.log("id", character.id);
+      console.log("find", characterId);
+      if (characterId === character.id) {
+        console.log("if", characterId, character.id);
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    if (clickedCharacter === true) {
+      return (
+        <CharacterDetail
+          id={clickedCharacter.id}
+          name={clickedCharacter.name}
+          status={clickedCharacter.status}
+          species={clickedCharacter.species}
+          // origin={clickedCharacter.origin.name}
+          // episodes={clickedCharacter.espisode.length}
+        />
+      );
+    } else {
+      return (
+        <p className="character-missing">No hemos encontrado el personaje</p>
+      );
+    }
+  };
 
   // Return
   return (
     <>
       <Header />
-
       <main className="main">
         <Switch>
           <Route exact path="/">
-            <Link to="/CharacterDetail">Go</Link>
             <Filters
               characters={characters}
               sendFilter={handleFilter}
@@ -49,9 +79,10 @@ const App = () => {
             />
             <CharacterList characters={browsedCharacters} />
           </Route>
-          <Route path="/CharacterDetail">
-            <CharacterDetail characters={characters} />
-          </Route>
+          <Route
+            path="/character-dertail/:id"
+            component={renderCharacterDetail}
+          />
         </Switch>
       </main>
     </>

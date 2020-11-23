@@ -4,26 +4,19 @@ const CharacterDetail = (props) => {
   return (
     <>
       <Link to="/">Volver</Link>
-      <article className="character-detail">
+      <article className="character-detail" id={props.id}>
         <img
-          src={props.characters.image}
-          alt={props.characters.name}
-          className="character-detail__img"
+          src={props.image}
+          alt={props.name}
+          title={props.name}
+          className="character-detail__image"
         />
-        <h3 className="character-detail__name">{props.characters.name}</h3>
+        <h2 className="character-detail__name">{props.name}</h2>
         <ul className="character-detail__details">
-          <li className="character-detail__details__status">
-            {props.characters.status}
-          </li>
-          <li className="character-detail__details__species">
-            {props.characters.species}
-          </li>
-          <li className="character-detail__details__origin">
-            {props.characters.origin}
-          </li>
-          <li className="character-detail__details__episodes">
-            {props.characters.episodes}
-          </li>
+          <li className="character-detail__details__item">{props.status}</li>
+          <li className="character-detail__details__item">{props.species}</li>
+          <li className="character-detail__details__item"></li>
+          <li className="character-detail__details__item"></li>
         </ul>
       </article>
     </>
