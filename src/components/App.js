@@ -36,7 +36,7 @@ const App = () => {
     return character.name.toUpperCase().includes(userInput.toUpperCase());
   });
 
-  // Card click
+  // Character Detail
   const renderCharacterDetail = (props) => {
     const characterId = parseInt(props.match.params.id);
 
@@ -63,7 +63,7 @@ const App = () => {
     }
   };
 
-  // Return
+  // Render
   return (
     <>
       <Header />

@@ -16,18 +16,24 @@ const CharacterList = (props) => {
 
   // Sort
   props.characters.sort((a, b) => {
-    const nameA = a.name.toUpperCase();
-    const nameB = b.name.toUpperCase();
-    if (nameA < nameB) {
+    const characterNameA = a.name.toUpperCase();
+    const characterNameB = b.name.toUpperCase();
+    if (characterNameA < characterNameB) {
       return -1;
     }
-    if (nameA > nameB) {
+    if (characterNameA > characterNameB) {
       return 1;
     }
     return 0;
   });
 
-  return <ul className="character__list">{listCharacters}</ul>;
+  // Return
+
+  if (listCharacters !== []) {
+    return <ul className="character__list">{listCharacters}</ul>;
+  } else {
+    return <p className="character-error">Ne encontrado</p>;
+  }
 };
 
 export default CharacterList;
