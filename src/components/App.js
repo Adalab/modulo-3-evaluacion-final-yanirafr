@@ -1,13 +1,14 @@
 import React from "react";
 import "../stylesheet/App.scss";
 import { useState, useEffect } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import { getDataFromApi } from "../services/api";
 import Header from "./Header/Header";
 import CharacterList from "./CharacterList/CharacterList";
 import Filters from "./Filter/Filters";
 import CharacterDetail from "./CharacterDetail/CharacterDetail";
 import Load from "./Load/Load";
+import jerry from "../images/jerry-error.png";
 
 const App = () => {
   // State
@@ -59,10 +60,15 @@ const App = () => {
     } else {
       return (
         <div className="character-missing">
-          <p className="character-missing__text">
-            No hemos encontrado el personaje
-          </p>
-          <img src="" alt="" className="character-missing__image" />
+          <Link to="/" className="home-link">
+            Home
+          </Link>
+          <p className="character-missing__text">Page not found</p>
+          <img
+            src={jerry}
+            alt="Page not found"
+            className="character-missing__image"
+          />
         </div>
       );
     }

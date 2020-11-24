@@ -27,6 +27,7 @@ body {
   margin: auto;
   box-shadow: #c7d463 0 0 10px 5px;
   border-radius: 20px;
+  padding-bottom: 20px;
   @media (min-width: 768px) {
     width: 700px;
     height: 80vh;
@@ -42,6 +43,22 @@ body {
     @media (min-width: 768px) {
       padding: 15px;
       overflow-y: auto;
+    }
+  }
+}
+
+.character-missing {
+  text-align: center;
+  padding-top: 20px;
+  &__text {
+    font-size: 30px;
+    font-family: $font-secondary;
+    font-weight: bold;
+  }
+  &__image {
+    height: 300px;
+    @media (min-width: 768px) {
+      height: 500px;
     }
   }
 }

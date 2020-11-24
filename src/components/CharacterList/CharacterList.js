@@ -1,5 +1,6 @@
 import CharacterCard from "../CharacterCard/CharacterCard";
 import "./CharacterList.scss";
+import mee from "../../images/mee.png";
 import PropTypes from "prop-types";
 
 const CharacterList = (props) => {
@@ -35,7 +36,14 @@ const CharacterList = (props) => {
       {listCharacters.length !== 0 ? (
         <ul className="character__list">{listCharacters}</ul>
       ) : (
-        <p className="character__error">No encontrado</p>
+        <div className="character-error">
+          <p className="character-error__text">Character not found</p>
+          <img
+            src={mee}
+            alt="Character not found"
+            className="character-error__image"
+          />
+        </div>
       )}
     </section>
   );

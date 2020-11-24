@@ -1,3 +1,5 @@
+@import "../../stylesheet/variables.scss";
+
 .character {
   &__list {
     display: grid;
@@ -7,6 +9,24 @@
     }
     @media (min-width: 1200px) {
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.character-error {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  &__text {
+    font-size: 25px;
+    font-family: $font-secondary;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__image {
+    height: 300px;
+    @media (min-width: 768px) {
+      height: 400px;
     }
   }
 }
