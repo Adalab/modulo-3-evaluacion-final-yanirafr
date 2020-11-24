@@ -1,17 +1,20 @@
 @import "../../stylesheet/variables.scss";
 
 .home-link {
-  width: 200px;
+  width: 230px;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  @media (min-width: 1200px) {
+    margin-left: 215px;
+  }
   &__icon {
     width: 50px;
   }
   &__text {
-    font-size: 20px;
-    margin-left: 10px;
+    font-size: 24px;
+    margin-left: 15px;
     font-family: $font-primary;
     color: $color-tertiary;
   }

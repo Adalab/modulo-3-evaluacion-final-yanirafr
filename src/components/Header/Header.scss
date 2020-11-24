@@ -4,6 +4,8 @@
   text-align: center;
   background-color: $color-secondary;
   padding-bottom: 50px;
+  border-radius: 25px;
+  border: solid 5px $color-tertiary;
   background: radial-gradient(
     circle,
     $color-secondary 35%,
@@ -11,6 +13,7 @@
     $color-primary 80%
   );
   @media (min-width: 768px) {
+    border: none;
     padding-bottom: 10px;
     background: unset;
   }
@@ -23,6 +26,20 @@
     }
     &__text {
       display: none;
+    }
+    &__subtitle {
+      font-family: $font-primary;
+      color: #d0df50;
+      position: absolute;
+      top: 80px;
+      left: 45%;
+      font-size: 40px;
+      text-shadow: 0 4px #1f4d4b;
+      @media (min-width: 768px) {
+        font-size: 50px;
+        top: 100px;
+        left: 46%;
+      }
     }
   }
 }

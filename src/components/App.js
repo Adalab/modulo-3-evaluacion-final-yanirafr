@@ -9,6 +9,7 @@ import Filters from "./Filter/Filters";
 import CharacterDetail from "./CharacterDetail/CharacterDetail";
 import Load from "./Load/Load";
 import jerry from "../images/jerry-error.png";
+import portal from "../images/home-portal.png";
 
 const App = () => {
   // State
@@ -60,8 +61,9 @@ const App = () => {
     } else {
       return (
         <div className="character-missing">
-          <Link to="/" className="home-link">
-            Home
+          <Link to="/" className="home-link" title="Home portal">
+            <img src={portal} alt="Home-portal" className="home-link__icon" />
+            <p className="home-link__text">Home portal</p>
           </Link>
           <p className="character-missing__text">Page not found</p>
           <img

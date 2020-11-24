@@ -31,7 +31,7 @@ const Filters = (props) => {
 
 Filters.propTypes = {
   sendFilter: PropTypes.func,
-  inputValue: PropTypes.string,
+  userInput: PropTypes.string,
 };
 
 export default Filters;

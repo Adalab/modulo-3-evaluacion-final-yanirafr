@@ -11,7 +11,7 @@
 
 //App
 body {
-  background-color: $color-primary;
+  background-color: rgb(75, 75, 75);
   @media (min-width: 768px) {
     height: 100vh;
     background-image: url("../images/planet.png");
@@ -25,12 +25,13 @@ body {
   width: 300px;
   background-color: #ffffffb3;
   margin: 20px auto 20px auto;
-  box-shadow: #c7d463 0 0 10px 5px;
   border-radius: 20px;
   padding-bottom: 20px;
+  box-shadow: rgb(160, 160, 160) 0 0 15px 5px;
   @media (min-width: 768px) {
+    box-shadow: #c7d463 0 0 10px 5px;
     width: 700px;
-    height: 80vh;
+    height: 78vh;
     padding: 25px 25px 50px 25px;
   }
   @media (min-width: 1200px) {

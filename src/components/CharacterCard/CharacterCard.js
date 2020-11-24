@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import alien from "../../images/alien.png";
 import human from "../../images/human.png";
+import placeholder from "../../images/placeholder.jpeg";
 import "./CharacterCard.scss";
 import PropTypes from "prop-types";
 
@@ -13,7 +14,7 @@ const CharacterCard = (props) => {
       <li className="character__list__item" id={props.id} title={props.name}>
         <h3 className="character__list__name">{props.name}</h3>
         <img
-          src={props.image}
+          src={props.image || placeholder}
           alt={props.name}
           className="character__list__img"
         />

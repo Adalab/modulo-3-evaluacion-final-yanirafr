@@ -7,6 +7,7 @@ import alien from "../../images/alien.png";
 import alive from "../../images/alive.png";
 import dead from "../../images/dead.png";
 import unknown from "../../images/unknown.png";
+import placeholder from "../../images/placeholder.jpeg";
 
 const CharacterDetail = (props) => {
   return (
@@ -17,7 +18,7 @@ const CharacterDetail = (props) => {
       </Link>
       <article className="character-detail" id={props.id}>
         <img
-          src={props.image}
+          src={props.image || placeholder}
           alt={props.name}
           title={props.name}
           className="character-detail__image"
@@ -26,7 +27,7 @@ const CharacterDetail = (props) => {
           <h2 className="character-detail__name__text">{props.name}</h2>
           <div className="character__detail__icons">
             <img
-              src={props.species === "human" ? human : alien}
+              src={props.species === "Human" ? human : alien}
               alt={props.species}
               className="character-detail__icon"
               title={"Species: " + props.species}
