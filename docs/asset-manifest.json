@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.52c75874.chunk.css",
-    "main.js": "./static/js/main.f9e610d0.chunk.js",
-    "main.js.map": "./static/js/main.f9e610d0.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.528ad5a7.js",
-    "runtime-main.js.map": "./static/js/runtime-main.528ad5a7.js.map",
-    "static/js/2.16d10e82.chunk.js": "./static/js/2.16d10e82.chunk.js",
-    "static/js/2.16d10e82.chunk.js.map": "./static/js/2.16d10e82.chunk.js.map",
+    "main.css": "./static/css/main.4ee4007e.chunk.css",
+    "main.js": "./static/js/main.ba2009e9.chunk.js",
+    "main.js.map": "./static/js/main.ba2009e9.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.fdfdfe10.js",
+    "runtime-main.js.map": "./static/js/runtime-main.fdfdfe10.js.map",
+    "static/js/2.82aed2c5.chunk.js": "./static/js/2.82aed2c5.chunk.js",
+    "static/js/2.82aed2c5.chunk.js.map": "./static/js/2.82aed2c5.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.52c75874.chunk.css.map": "./static/css/main.52c75874.chunk.css.map",
-    "static/js/2.16d10e82.chunk.js.LICENSE.txt": "./static/js/2.16d10e82.chunk.js.LICENSE.txt",
+    "static/css/main.4ee4007e.chunk.css.map": "./static/css/main.4ee4007e.chunk.css.map",
+    "static/js/2.82aed2c5.chunk.js.LICENSE.txt": "./static/js/2.82aed2c5.chunk.js.LICENSE.txt",
     "static/media/alien.e5103873.png": "./static/media/alien.e5103873.png",
     "static/media/dead.06196964.png": "./static/media/dead.06196964.png",
     "static/media/home-portal.5e5081a6.png": "./static/media/home-portal.5e5081a6.png",
@@ -22,9 +22,9 @@
     "static/media/unknown.01ffd640.png": "./static/media/unknown.01ffd640.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.528ad5a7.js",
-    "static/js/2.16d10e82.chunk.js",
-    "static/css/main.52c75874.chunk.css",
-    "static/js/main.f9e610d0.chunk.js"
+    "static/js/runtime-main.fdfdfe10.js",
+    "static/js/2.82aed2c5.chunk.js",
+    "static/css/main.4ee4007e.chunk.css",
+    "static/js/main.ba2009e9.chunk.js"
   ]
 }
