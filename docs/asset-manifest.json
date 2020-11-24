@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.39821b8b.chunk.css",
-    "main.js": "./static/js/main.1a8e4247.chunk.js",
-    "main.js.map": "./static/js/main.1a8e4247.chunk.js.map",
+    "main.css": "./static/css/main.510070de.chunk.css",
+    "main.js": "./static/js/main.9d550583.chunk.js",
+    "main.js.map": "./static/js/main.9d550583.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.528ad5a7.js",
     "runtime-main.js.map": "./static/js/runtime-main.528ad5a7.js.map",
     "static/js/2.16d10e82.chunk.js": "./static/js/2.16d10e82.chunk.js",
     "static/js/2.16d10e82.chunk.js.map": "./static/js/2.16d10e82.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.39821b8b.chunk.css.map": "./static/css/main.39821b8b.chunk.css.map",
+    "static/css/main.510070de.chunk.css.map": "./static/css/main.510070de.chunk.css.map",
     "static/js/2.16d10e82.chunk.js.LICENSE.txt": "./static/js/2.16d10e82.chunk.js.LICENSE.txt",
     "static/media/alien.e5103873.png": "./static/media/alien.e5103873.png",
     "static/media/jerry-error.57e04866.png": "./static/media/jerry-error.57e04866.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.528ad5a7.js",
     "static/js/2.16d10e82.chunk.js",
-    "static/css/main.39821b8b.chunk.css",
-    "static/js/main.1a8e4247.chunk.js"
+    "static/css/main.510070de.chunk.css",
+    "static/js/main.9d550583.chunk.js"
   ]
 }
