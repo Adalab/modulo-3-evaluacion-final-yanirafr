@@ -21,6 +21,13 @@
         #018e7e 85%,
         #181818 100%
       );
+      transition: linear 0.1s;
+      &:hover {
+        transform: rotate(-3deg);
+      }
+      &:active {
+        transform: scale(1.05) rotate(-3deg);
+      }
     }
     &__item {
       width: 100%;

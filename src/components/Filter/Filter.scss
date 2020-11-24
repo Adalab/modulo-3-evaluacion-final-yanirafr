@@ -2,7 +2,7 @@
 
 .browse {
   &__form {
-    padding: 30px 0;
+    padding: 5px 0 30px 0;
     text-align: center;
     @media (min-width: 768px) {
       text-align: unset;
@@ -20,7 +20,7 @@
       border: solid 2px $color-primary;
       margin: 20px;
       @media (min-width: 768px) {
-        width: 200px;
+        width: 297px;
       }
       &:focus {
         outline: $color-quaternary solid 2px;

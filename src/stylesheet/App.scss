@@ -23,20 +23,18 @@ body {
 
 .main {
   width: 300px;
-  background-color: white;
-  margin: auto;
+  background-color: #ffffffb3;
+  margin: 20px auto 20px auto;
   box-shadow: #c7d463 0 0 10px 5px;
   border-radius: 20px;
   padding-bottom: 20px;
   @media (min-width: 768px) {
     width: 700px;
     height: 80vh;
-    padding: 0 25px 50px 25px;
-    margin: auto;
+    padding: 25px 25px 50px 25px;
   }
   @media (min-width: 1200px) {
     width: 1190px;
-    // height: 710px;
   }
   &__box {
     height: 100%;
