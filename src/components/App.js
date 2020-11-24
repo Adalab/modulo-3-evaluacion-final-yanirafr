@@ -58,7 +58,12 @@ const App = () => {
       );
     } else {
       return (
-        <p className="character-missing">No hemos encontrado el personaje</p>
+        <div className="character-missing">
+          <p className="character-missing__text">
+            No hemos encontrado el personaje
+          </p>
+          <img src="" alt="" className="character-missing__image" />
+        </div>
       );
     }
   };
