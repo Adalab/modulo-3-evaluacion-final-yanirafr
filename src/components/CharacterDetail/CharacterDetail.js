@@ -36,7 +36,7 @@ const CharacterDetail = (props) => {
 };
 
 CharacterDetail.propTypes = {
-  id: PropTypes.string,
+  id: PropTypes.number,
   name: PropTypes.string,
   image: PropTypes.string,
   species: PropTypes.string,

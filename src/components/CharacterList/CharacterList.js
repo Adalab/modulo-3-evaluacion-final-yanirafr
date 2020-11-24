@@ -42,7 +42,7 @@ const CharacterList = (props) => {
 };
 
 CharacterList.propTypes = {
-  characters: PropTypes.object,
+  characters: PropTypes.array,
 };
 
 export default CharacterList;

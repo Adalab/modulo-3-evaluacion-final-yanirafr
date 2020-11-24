@@ -2,11 +2,29 @@
 
 .browse {
   &__form {
-    font-family: $font-secondary;
-    display: flex;
-    flex-direction: column;
+    padding: 30px 0;
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: unset;
+    }
+    &__label {
+      font-family: $font-primary;
+      font-size: 30px;
+      margin: 0 15px;
+      color: $color-primary;
+    }
     &__input {
-      width: 200px;
+      font-family: $font-secondary;
+      font-size: 16px;
+      padding: 5px 10px;
+      border: solid 2px $color-primary;
+      margin: 20px;
+      @media (min-width: 768px) {
+        width: 200px;
+      }
+      &:focus {
+        outline: $color-quaternary solid 2px;
+      }
     }
   }
 }

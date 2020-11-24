@@ -13,7 +13,7 @@ const Filters = (props) => {
     <section className="browse">
       <form className="browse__form" onSubmit={stopSubmit}>
         <label className="browse__form__label" htmlFor="userInput">
-          Browse characters:
+          Browse characters
         </label>
         <input
           type="text"
