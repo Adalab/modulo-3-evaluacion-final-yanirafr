@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import "./CharacterDetail.scss";
+import PropTypes from "prop-types";
 
 const CharacterDetail = (props) => {
   return (
@@ -31,6 +33,16 @@ const CharacterDetail = (props) => {
       </article>
     </>
   );
+};
+
+CharacterDetail.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  species: PropTypes.string,
+  status: PropTypes.string,
+  origin: PropTypes.string,
+  episodes: PropTypes.number,
 };
 
 export default CharacterDetail;

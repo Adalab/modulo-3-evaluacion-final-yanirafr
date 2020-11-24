@@ -1,4 +1,6 @@
-import CharacterCard from "./CharacterCard";
+import CharacterCard from "../CharacterCard/CharacterCard";
+import "./CharacterList.scss";
+import PropTypes from "prop-types";
 
 const CharacterList = (props) => {
   // Map
@@ -37,6 +39,10 @@ const CharacterList = (props) => {
       )}
     </section>
   );
+};
+
+CharacterList.propTypes = {
+  characters: PropTypes.object,
 };
 
 export default CharacterList;

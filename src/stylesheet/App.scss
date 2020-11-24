@@ -1,5 +1,6 @@
-$font-primary: "Nerko One", cursive;
+@import "./variables.scss";
 
+// Reset
 * {
   margin: 0;
   padding: 0;
@@ -7,67 +8,40 @@ $font-primary: "Nerko One", cursive;
   text-decoration: none;
   list-style: none;
 }
+
+//App
 body {
-  height: 100vh;
-  background-color: #016b83;
-  background-image: url("../images/planet.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.header {
-  padding: 20px;
-  text-align: center;
-  &__image {
-    height: 160px;
-  }
-  &__title {
-    display: none;
+  background-color: $color-primary;
+  @media (min-width: 768px) {
+    height: 100vh;
+    background-image: url("../images/planet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
+
 .main {
-  height: 75vh;
-  overflow-y: auto;
-  width: 1200px;
+  width: 300px;
+  background-color: white;
   margin: auto;
   box-shadow: #c7d463 0 0 10px 5px;
-  background-color: white;
   border-radius: 20px;
-}
-.character {
-  &__list {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    &__link {
-      padding: 25px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: rgb(241, 119, 206);
-      background: linear-gradient(
-        22deg,
-        rgba(241, 119, 206, 1) 0%,
-        rgba(201, 145, 86, 0.9023984593837535) 50%,
-        rgba(94, 221, 212, 1) 100%
-      );
-    }
-    &__item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    &__img {
-      width: 170px;
-    }
-    &__name {
-      text-align: center;
-      font-family: $font-primary;
-      width: 200px;
-      padding: 10px 0;
+  @media (min-width: 768px) {
+    width: 700px;
+    height: 80vh;
+    padding: 25px 25px 50px 25px;
+    margin: auto;
+  }
+  @media (min-width: 1200px) {
+    width: 1190px;
+    // height: 710px;
+  }
+  &__box {
+    height: 100%;
+    @media (min-width: 768px) {
+      padding: 15px;
+      overflow-y: auto;
     }
   }
 }

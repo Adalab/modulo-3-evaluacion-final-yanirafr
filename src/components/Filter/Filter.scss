@@ -1,0 +1,12 @@
+@import "../../stylesheet/variables.scss";
+
+.browse {
+  &__form {
+    font-family: $font-secondary;
+    display: flex;
+    flex-direction: column;
+    &__input {
+      width: 200px;
+    }
+  }
+}

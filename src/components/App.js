@@ -3,11 +3,11 @@ import "../stylesheet/App.scss";
 import { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 import { getDataFromApi } from "../services/api";
-import Header from "./Header";
-import CharacterList from "./CharacterList";
-import Filters from "./Filters";
-import CharacterDetail from "./CharacterDetail";
-import Load from "./Load";
+import Header from "./Header/Header";
+import CharacterList from "./CharacterList/CharacterList";
+import Filters from "./Filter/Filters";
+import CharacterDetail from "./CharacterDetail/CharacterDetail";
+import Load from "./Load/Load";
 
 const App = () => {
   // State
@@ -69,21 +69,23 @@ const App = () => {
       <Header />
       {load === true ? <Load /> : null}
       <main className="main">
-        <Switch>
-          <Route exact path="/">
-            <Filters
-              characters={characters}
-              sendFilter={handleFilter}
-              userInput={userInput}
-            />
-            <CharacterList characters={browsedCharacters} />
-          </Route>
+        <div className="main__box">
+          <Switch>
+            <Route exact path="/">
+              <Filters
+                characters={characters}
+                sendFilter={handleFilter}
+                userInput={userInput}
+              />
+              <CharacterList characters={browsedCharacters} />
+            </Route>
 
-          <Route
-            path="/character-dertail/:id"
-            component={renderCharacterDetail}
-          />
-        </Switch>
+            <Route
+              path="/character-dertail/:id"
+              component={renderCharacterDetail}
+            />
+          </Switch>
+        </div>
       </main>
     </>
   );

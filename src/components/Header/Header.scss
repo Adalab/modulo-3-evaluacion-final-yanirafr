@@ -1,0 +1,26 @@
+@import "../../stylesheet/variables.scss";
+
+.header {
+  text-align: center;
+  background-color: $color-secondary;
+  padding-bottom: 50px;
+  background: radial-gradient(
+    circle,
+    $color-secondary 35%,
+    $color-quaternary 65%,
+    $color-primary 80%
+  );
+  @media (min-width: 768px) {
+    padding-bottom: 10px;
+    background: unset;
+  }
+  &__image {
+    height: 100px;
+    @media (min-width: 768px) {
+      height: 130px;
+    }
+  }
+  &__title {
+    display: none;
+  }
+}
