@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Final evaluation Javascript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Yanira Fernández Requena
 
-## Available Scripts
+This is the page I made for the **module 3: React final evaluation** for the **Adalab** front-end course.
 
-In the project directory, you can run:
+We needed to make a website showing different Rick and Morty characters and some info about them.
 
-### `npm start`
+### Main page:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Character list. Fetched from https://rickandmortyapi.com/api/character/
+   - Icon showing character's species.
+2. You can click a character to acces It's own page.
+3. Text input for filtering character name.
+   - Not cap sensitive.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Character pages:
 
-### `npm test`
+- Using **React router**.
+- Shows extra Character information.
+  - Icons showing character's species and status.
+- Link to homepage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Page errors:
 
-### `npm run build`
+- Error showing that no character matches the user input.
+- Error showing when trying to acces a non-existing character page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Loading
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- A loading icon shows while fetching data from API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Local storage:
 
-### `npm run eject`
+- User input is saved on local storage.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Component structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Components](./src/images/components.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Each component is located in a folder with it's name, together with component's **SCSS**.
+- General styles are in stylesheet folder.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Bonus:
 
-## Learn More
+- Added CSS styles.
+- URL compatible.
+- Characters are **ordered alphabetically**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> This task was completed on 24/11/2020.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
