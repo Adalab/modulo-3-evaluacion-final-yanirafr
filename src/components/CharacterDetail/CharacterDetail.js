@@ -12,13 +12,18 @@ import earth from "../../images/earth.png";
 import planets from "../../images/planets.jpg";
 
 const CharacterDetail = (props) => {
+  const origin = props.origin.toLowerCase().includes("earth")
+    ? "earth"
+    : "planets";
+  console.log(origin);
+
   return (
     <>
       <Link to="/" className="home-link" title="Home portal">
         <img src={portal} alt="Home-portal" className="home-link__icon" />
-        <p className="home-link__text">Home portal</p>
+        <p className="home-link__text">Home</p>
       </Link>
-      <article className="character-detail" id={props.id}>
+      <article className={"character-detail " + origin} id={props.id}>
         <img
           src={props.image || placeholder}
           alt={props.name}
