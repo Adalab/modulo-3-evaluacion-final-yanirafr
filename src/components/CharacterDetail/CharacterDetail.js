@@ -8,6 +8,8 @@ import alive from "../../images/alive.png";
 import dead from "../../images/dead.png";
 import unknown from "../../images/unknown.png";
 import placeholder from "../../images/placeholder.jpeg";
+import earth from "../../images/earth.png";
+import planets from "../../images/planets.jpg";
 
 const CharacterDetail = (props) => {
   return (
