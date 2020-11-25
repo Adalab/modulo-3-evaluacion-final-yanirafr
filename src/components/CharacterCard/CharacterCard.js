@@ -31,6 +31,7 @@ const CharacterCard = (props) => {
   );
 };
 
+// Prop Types
 CharacterCard.propTypes = {
   id: PropTypes.number,
   name: PropTypes.string,

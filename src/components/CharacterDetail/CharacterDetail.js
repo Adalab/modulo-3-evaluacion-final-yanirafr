@@ -8,15 +8,15 @@ import alive from "../../images/alive.png";
 import dead from "../../images/dead.png";
 import unknown from "../../images/unknown.png";
 import placeholder from "../../images/placeholder.jpeg";
-import earth from "../../images/earth.png";
-import planets from "../../images/planets.jpg";
 
 const CharacterDetail = (props) => {
+  // Origin background
   const origin = props.origin.toLowerCase().includes("earth")
     ? "earth"
     : "planets";
   console.log(origin);
 
+  // Return
   return (
     <>
       <Link to="/" className="home-link" title="Home portal">
@@ -72,6 +72,7 @@ const CharacterDetail = (props) => {
   );
 };
 
+// Prop Types
 CharacterDetail.propTypes = {
   id: PropTypes.number,
   name: PropTypes.string,

@@ -49,6 +49,7 @@ const CharacterList = (props) => {
   );
 };
 
+// Prop Types
 CharacterList.propTypes = {
   characters: PropTypes.array,
 };

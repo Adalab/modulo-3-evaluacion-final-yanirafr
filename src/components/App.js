@@ -19,7 +19,7 @@ const App = () => {
   );
   const [load, setLoad] = useState(true);
 
-  // Life cicle
+  // Life cycle
   useEffect(() => {
     setLoad(true);
     getDataFromApi().then((data) => {
@@ -46,6 +46,7 @@ const App = () => {
       return characterId === parseInt(character.id);
     });
 
+    // Detail Page
     if (clickedCharacter) {
       return (
         <CharacterDetail
@@ -58,12 +59,14 @@ const App = () => {
           episodes={clickedCharacter.episode.length}
         />
       );
+
+      // Error Page
     } else {
       return (
         <div className="character-missing">
           <Link to="/" className="home-link" title="Home portal">
             <img src={portal} alt="Home-portal" className="home-link__icon" />
-            <p className="home-link__text">Home portal</p>
+            <p className="home-link__text">Home</p>
           </Link>
           <p className="character-missing__text">Page not found</p>
           <img
@@ -76,7 +79,7 @@ const App = () => {
     }
   };
 
-  // Render
+  // Return
   return (
     <>
       <Header />
