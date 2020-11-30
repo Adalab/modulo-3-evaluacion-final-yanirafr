@@ -1,4 +1,4 @@
-# Final evaluation Javascript
+# Final evaluation React
 
 ## Yanira Fernández Requena
 
